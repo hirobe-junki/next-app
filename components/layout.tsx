@@ -7,7 +7,12 @@ import Link from 'next/link';
 const name = 'Promet System';
 export const siteTitle = 'Next.js Sample Website';
 
-const Layout = ({ children, home }) => {
+type Props = {
+  children: React.ReactNode;
+  home?: boolean;
+};
+
+const Layout = ({ children, home }: Props) => {
   return (
     <div className={styles.container}>
       <Head>
