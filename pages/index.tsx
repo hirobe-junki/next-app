@@ -4,9 +4,10 @@ import Date from '../components/date';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
+import { GetStaticProps } from 'next';
 
 // export const getServerSideProps = async (context) => {
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData();
   return {
     props: {
@@ -15,7 +16,15 @@ export const getStaticProps = async () => {
   };
 };
 
-const Home = ({ allPostsData }) => {
+type Props = {
+  allPostsData: {
+    id: string;
+    title: string;
+    date: string;
+  }[];
+};
+
+const Home = ({ allPostsData }: Props) => {
   return (
     <Layout home>
       <Head>
