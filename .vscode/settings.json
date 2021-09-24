@@ -1,0 +1,33 @@
+{
+  "files.eol": "\n",
+  "editor.formatOnSave": false,
+  "workbench.tree.indent": 16,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "eslint.workingDirectories": ["./next-app"],
+  "cSpell.words": [
+    "firestore",
+    "reducks",
+    "signin",
+    "swiper",
+    "wojtekmaj",
+    "wrapin"
+  ]
+
+  // "[json]": {
+  //   "editor.tabSize": 2,
+  //   "editor.formatOnSave": false, // 保存時に自動整形を行う
+  //   "editor.formatOnPaste": false // ペースト時に自動整形を行わない
+  // },
+  // "[html]": {
+  //   "editor.tabSize": 2,
+  //   "editor.formatOnSave": false, // 保存時に自動整形を行う
+  //   "editor.formatOnPaste": false // ペースト時に自動整形を行わない
+  // },
+  // "[javascript]": {
+  //   "editor.tabSize": 2,
+  //   "editor.formatOnSave": false, // 保存時に自動整形を行う
+  //   "editor.formatOnPaste": false // ペースト時に自動整形を行わない
+  // },
+  // "editor.tabSize": 2,
+  // "editor.detectIndentation": false
+}
