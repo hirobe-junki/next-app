@@ -3,16 +3,12 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import { LayoutProps } from '../types/components/layout.type';
 
 const name = 'Promet System';
 export const siteTitle = 'Next.js Sample Website';
 
-type Props = {
-  children: React.ReactNode;
-  home?: boolean;
-};
-
-const Layout = ({ children, home }: Props) => {
+const Layout = ({ children, home }: LayoutProps) => {
   return (
     <div className={styles.container}>
       <Head>
