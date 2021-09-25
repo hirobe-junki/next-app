@@ -1,10 +1,7 @@
 import { parseISO, format } from 'date-fns';
+import { DateProps } from '../types/components/date.type';
 
-type Props = {
-  dateString: string;
-};
-
-const Date = ({ dateString }: Props) => {
+const Date = ({ dateString }: DateProps) => {
   const date = parseISO(dateString);
   return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy')}</time>;
 };
